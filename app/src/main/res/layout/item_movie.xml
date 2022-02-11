@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvOverView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
+
+        tools:text="Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man." />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:text="textView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPoster"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Spider-Man: No Way Home" />
+</RelativeLayout>
